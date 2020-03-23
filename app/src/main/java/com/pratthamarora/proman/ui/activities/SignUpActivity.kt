@@ -14,27 +14,16 @@ import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUpActivity : BaseActivity() {
 
-    /**
-     * This function is auto created by Android when the Activity Class is created.
-     */
     override fun onCreate(savedInstanceState: Bundle?) {
-        //This call the parent constructor
         super.onCreate(savedInstanceState)
-        // This is used to align the xml view to this class
         setContentView(R.layout.activity_sign_up)
 
-
         setupActionBar()
-
-        // Click event for sign-up button.
         btn_sign_up.setOnClickListener {
             registerUser()
         }
     }
 
-    /**
-     * A function for actionBar Setup.
-     */
     private fun setupActionBar() {
 
         setSupportActionBar(toolbar_sign_up_activity)
@@ -48,10 +37,6 @@ class SignUpActivity : BaseActivity() {
         toolbar_sign_up_activity.setNavigationOnClickListener { onBackPressed() }
     }
 
-    /**
-     * A function to register a user to our app using the Firebase.
-     * For more details visit: https://firebase.google.com/docs/auth/android/custom-auth
-     */
     private fun registerUser() {
         // Here we get the text from editText and trim the space
         val name: String = et_name.text.toString().trim { it <= ' ' }
@@ -90,9 +75,6 @@ class SignUpActivity : BaseActivity() {
         }
     }
 
-    /**
-     * A function to validate the entries of a new user.
-     */
     private fun validateForm(name: String, email: String, password: String): Boolean {
         return when {
             TextUtils.isEmpty(name) -> {
@@ -113,9 +95,6 @@ class SignUpActivity : BaseActivity() {
         }
     }
 
-    /**
-     * A function to be called the user is registered successfully and entry is made in the firestore database.
-     */
     fun userRegisteredSuccess() {
 
         Toast.makeText(
@@ -124,15 +103,8 @@ class SignUpActivity : BaseActivity() {
             Toast.LENGTH_SHORT
         ).show()
 
-        // Hide the progress dialog
         hideProgressDialog()
-
-        /**
-         * Here the new user registered is automatically signed-in so we just sign-out the user from firebase
-         * and send him to Intro Screen for Sign-In
-         */
         FirebaseAuth.getInstance().signOut()
-        // Finish the Sign-Up Screen
         finish()
     }
 }
