@@ -27,6 +27,41 @@ class SignInActivity : BaseActivity() {
         btn_sign_in.setOnClickListener {
             signInRegisteredUser()
         }
+        forgot_pass.setOnClickListener {
+            forgotPassword()
+        }
+    }
+
+    private fun forgotPassword() {
+        val emailReset = et_email.text.toString().trim()
+        if (emailReset.isNotEmpty()) {
+            FirebaseAuth.getInstance().sendPasswordResetEmail(emailReset).addOnCompleteListener {
+                if (it.isSuccessful) {
+                    Toast.makeText(
+                        this,
+                        "Please check your email to reset password",
+                        Toast.LENGTH_LONG
+                    )
+                        .show()
+                } else {
+                    Toast.makeText(
+                        this,
+                        "error occurred",
+                        Toast.LENGTH_LONG
+                    )
+                        .show()
+                }
+            }
+        } else {
+            Toast.makeText(
+                this,
+                "Please enter valid email",
+                Toast.LENGTH_LONG
+            )
+                .show()
+        }
+
+
     }
 
     /**

@@ -102,6 +102,17 @@
                     android:text="@string/sign_in"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/btn_text_size" />
+
+                <TextView
+                    android:id="@+id/forgot_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/forgot_password"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
