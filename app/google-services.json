@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1009750101239",
+    "firebase_url": "https://proman-b2b03.firebaseio.com",
+    "project_id": "proman-b2b03",
+    "storage_bucket": "proman-b2b03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009750101239:android:080cc373f8b943011b17f2",
+        "android_client_info": {
+          "package_name": "com.pratthamarora.projekts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009750101239-v2b5is0hbetgvtg7f9ho852q9dsjs1na.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9Fh0TXEjGHMlEskjYQozwAZ87IlI-pNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009750101239-v2b5is0hbetgvtg7f9ho852q9dsjs1na.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
