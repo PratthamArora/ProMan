@@ -26,6 +26,7 @@
         android:background="@drawable/ic_background">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/mainCardLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/my_profile_screen_content_marginStartEnd"
@@ -33,6 +34,7 @@
             android:layout_marginEnd="@dimen/my_profile_screen_content_marginStartEnd"
             android:layout_marginBottom="@dimen/my_profile_screen_content_marginTopBottom"
             android:elevation="@dimen/card_view_elevation"
+            android:visibility="gone"
             app:cardCornerRadius="@dimen/card_view_corner_radius">
 
             <LinearLayout
@@ -111,5 +113,11 @@
                     android:textSize="@dimen/btn_text_size" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progressBarProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
     </LinearLayout>
 </LinearLayout>

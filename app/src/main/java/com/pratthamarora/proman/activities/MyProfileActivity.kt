@@ -8,6 +8,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.View
 import android.webkit.MimeTypeMap
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
@@ -140,6 +141,8 @@ class MyProfileActivity : BaseActivity() {
         if (user.mobile != 0L) {
             et_mobile.setText(user.mobile.toString())
         }
+        progressBarProfile.visibility = View.GONE
+        mainCardLayout.visibility = View.VISIBLE
     }
 
 
@@ -220,7 +223,7 @@ class MyProfileActivity : BaseActivity() {
     fun profileUpdateSuccess() {
 
         hideProgressDialog()
-
+        setResult(Activity.RESULT_OK)
         finish()
     }
 
