@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_splash_background"
     android:gravity="center"
-    tools:context=".activities.SplashScreenActivity">
+    tools:context=".activities.SplashActivity">
 
     <TextView
         android:id="@+id/tv_app_name"
@@ -16,5 +16,4 @@
         android:textColor="@android:color/white"
         android:textSize="@dimen/splash_screen_title_text_size"
         android:textStyle="bold" />
-
 </LinearLayout>

@@ -20,8 +20,10 @@
             app:popupTheme="@style/AppTheme.PopupOverlay" />
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!--This layout is just used for applying a background image to the screen below the toolbar.-->
     <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="match_parent"
         android:background="@drawable/ic_background">
 
@@ -116,8 +118,9 @@
 
         <ProgressBar
             android:id="@+id/progressBarProfile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:foregroundGravity="center"
+            android:layout_height="match_parent"
             android:layout_gravity="center" />
     </LinearLayout>
 </LinearLayout>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/height_of_nav_main"
     android:background="@drawable/nav_header_main_background"
@@ -10,7 +9,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iv_profile_user_image"
+        android:id="@+id/iv_user_image"
         android:layout_width="@dimen/nav_image_size"
         android:layout_height="@dimen/nav_image_size"
         android:layout_marginStart="@dimen/nav_content_margin_StartEnd"
@@ -28,9 +27,9 @@
         android:layout_marginTop="@dimen/nav_content_margin_top"
         android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
         android:layout_marginBottom="@dimen/nav_content_margin_bottom"
+        android:text="@string/app_name"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/nav_user_name_text_size"
-        tools:text="Username" />
+        android:textSize="@dimen/nav_user_name_text_size" />
 
     <View
         android:layout_width="match_parent"
