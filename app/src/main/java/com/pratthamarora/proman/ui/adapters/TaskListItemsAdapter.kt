@@ -1,4 +1,4 @@
-package com.pratthamarora.proman.adapters
+package com.pratthamarora.proman.ui.adapters
 
 import android.content.Context
 import android.content.res.Resources
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.pratthamarora.proman.R
-import com.pratthamarora.proman.activities.TaskListActivity
+import com.pratthamarora.proman.ui.activities.TaskListActivity
 import com.pratthamarora.proman.model.Task
 import kotlinx.android.synthetic.main.item_task.view.*
 import java.util.*

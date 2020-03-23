@@ -1,4 +1,4 @@
-package com.pratthamarora.proman.activities
+package com.pratthamarora.proman.ui.activities
 
 import android.app.Activity
 import android.content.Context
@@ -17,7 +17,7 @@ import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.iid.FirebaseInstanceId
 import com.pratthamarora.proman.R
-import com.pratthamarora.proman.adapters.BoardItemsAdapter
+import com.pratthamarora.proman.ui.adapters.BoardItemsAdapter
 import com.pratthamarora.proman.firebase.FirestoreClass
 import com.pratthamarora.proman.model.Board
 import com.pratthamarora.proman.model.User

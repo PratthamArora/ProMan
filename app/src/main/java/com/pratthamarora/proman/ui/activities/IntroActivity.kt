@@ -1,9 +1,8 @@
-package com.pratthamarora.proman.activities
+package com.pratthamarora.proman.ui.activities
 
 import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.pratthamarora.proman.R
 import kotlinx.android.synthetic.main.activity_intro.*

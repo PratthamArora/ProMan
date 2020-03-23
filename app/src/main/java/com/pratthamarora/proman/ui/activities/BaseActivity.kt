@@ -1,4 +1,4 @@
-package com.pratthamarora.proman.activities
+package com.pratthamarora.proman.ui.activities
 
 import android.app.Dialog
 import android.os.Handler

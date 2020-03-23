@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pratthamarora.proman.R
-import com.pratthamarora.proman.adapters.MemberListItemsAdapter
+import com.pratthamarora.proman.ui.adapters.MemberListItemsAdapter
 import com.pratthamarora.proman.model.User
 import kotlinx.android.synthetic.main.dialog_list.view.*
 

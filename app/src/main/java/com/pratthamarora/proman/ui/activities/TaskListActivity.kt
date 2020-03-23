@@ -1,4 +1,4 @@
-package com.pratthamarora.proman.activities
+package com.pratthamarora.proman.ui.activities
 
 import android.app.Activity
 import android.content.Intent
@@ -8,7 +8,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pratthamarora.proman.R
-import com.pratthamarora.proman.adapters.TaskListItemsAdapter
+import com.pratthamarora.proman.ui.adapters.TaskListItemsAdapter
 import com.pratthamarora.proman.firebase.FirestoreClass
 import com.pratthamarora.proman.model.Board
 import com.pratthamarora.proman.model.Card

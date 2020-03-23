@@ -6,7 +6,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
-import com.pratthamarora.proman.activities.*
+import com.pratthamarora.proman.ui.activities.*
 import com.pratthamarora.proman.model.Board
 import com.pratthamarora.proman.model.User
 import com.pratthamarora.proman.utils.Constants

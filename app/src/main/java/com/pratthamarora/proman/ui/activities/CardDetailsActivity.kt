@@ -1,4 +1,4 @@
-package com.pratthamarora.proman.activities
+package com.pratthamarora.proman.ui.activities
 
 import android.app.Activity
 import android.app.DatePickerDialog
@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.GridLayoutManager
 import com.pratthamarora.proman.R
-import com.pratthamarora.proman.adapters.CardMemberListItemsAdapter
+import com.pratthamarora.proman.ui.adapters.CardMemberListItemsAdapter
 import com.pratthamarora.proman.dialogs.LabelColorListDialog
 import com.pratthamarora.proman.dialogs.MembersListDialog
 import com.pratthamarora.proman.firebase.FirestoreClass

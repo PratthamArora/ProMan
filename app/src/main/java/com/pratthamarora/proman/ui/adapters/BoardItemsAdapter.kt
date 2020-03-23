@@ -1,4 +1,4 @@
-package com.pratthamarora.proman.adapters
+package com.pratthamarora.proman.ui.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,13 +7,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.pratthamarora.proman.R
-import com.pratthamarora.proman.model.User
-import com.pratthamarora.proman.utils.Constants
-import kotlinx.android.synthetic.main.item_member.view.*
+import com.pratthamarora.proman.model.Board
+import kotlinx.android.synthetic.main.item_board.view.*
 
-open class MemberListItemsAdapter(
+open class BoardItemsAdapter(
     private val context: Context,
-    private var list: ArrayList<User>
+    private var list: ArrayList<Board>
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private var onClickListener: OnClickListener? = null
@@ -25,9 +24,10 @@ open class MemberListItemsAdapter(
      * {@link ViewHolder} and initializes some private fields to be used by RecyclerView.
      */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+
         return MyViewHolder(
             LayoutInflater.from(context).inflate(
-                R.layout.item_member,
+                R.layout.item_board,
                 parent,
                 false
             )
@@ -53,26 +53,16 @@ open class MemberListItemsAdapter(
                 .with(context)
                 .load(model.image)
                 .centerCrop()
-                .placeholder(R.drawable.ic_user_place_holder)
-                .into(holder.itemView.iv_member_image)
+                .placeholder(R.drawable.ic_board_place_holder)
+                .into(holder.itemView.iv_board_image)
 
-            holder.itemView.tv_member_name.text = model.name
-            holder.itemView.tv_member_email.text = model.email
-
-            if (model.selected) {
-                holder.itemView.iv_selected_member.visibility = View.VISIBLE
-            } else {
-                holder.itemView.iv_selected_member.visibility = View.GONE
-            }
+            holder.itemView.tv_name.text = model.name
+            holder.itemView.tv_created_by.text = "Created By : ${model.createdBy}"
 
             holder.itemView.setOnClickListener {
 
                 if (onClickListener != null) {
-                    if (model.selected) {
-                        onClickListener!!.onClick(position, model, Constants.UN_SELECT)
-                    } else {
-                        onClickListener!!.onClick(position, model, Constants.SELECT)
-                    }
+                    onClickListener!!.onClick(position, model)
                 }
             }
         }
@@ -96,11 +86,11 @@ open class MemberListItemsAdapter(
      * An interface for onclick items.
      */
     interface OnClickListener {
-        fun onClick(position: Int, user: User, action: String)
+        fun onClick(position: Int, model: Board)
     }
 
     /**
      * A ViewHolder describes an item view and metadata about its place within the RecyclerView.
      */
-    class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
+    private class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
 }

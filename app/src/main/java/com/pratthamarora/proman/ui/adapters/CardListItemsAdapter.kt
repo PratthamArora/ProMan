@@ -1,4 +1,4 @@
-package com.pratthamarora.proman.adapters
+package com.pratthamarora.proman.ui.adapters
 
 import android.content.Context
 import android.graphics.Color
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.pratthamarora.proman.R
-import com.pratthamarora.proman.activities.TaskListActivity
+import com.pratthamarora.proman.ui.activities.TaskListActivity
 import com.pratthamarora.proman.model.Card
 import com.pratthamarora.proman.model.SelectedMembers
 import kotlinx.android.synthetic.main.item_card.view.*

@@ -1,4 +1,4 @@
-package com.pratthamarora.proman.activities
+package com.pratthamarora.proman.ui.activities
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -11,7 +11,7 @@ import android.view.MenuItem
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pratthamarora.proman.R
-import com.pratthamarora.proman.adapters.MemberListItemsAdapter
+import com.pratthamarora.proman.ui.adapters.MemberListItemsAdapter
 import com.pratthamarora.proman.firebase.FirestoreClass
 import com.pratthamarora.proman.model.Board
 import com.pratthamarora.proman.model.User

@@ -33,7 +33,7 @@
         <!-- [END fcm_default_channel] -->
 
         <activity
-            android:name=".activities.SplashActivity"
+            android:name="com.pratthamarora.proman.ui.activities.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -43,49 +43,49 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.IntroActivity"
+            android:name="com.pratthamarora.proman.ui.activities.IntroActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activities.SignUpActivity"
+            android:name="com.pratthamarora.proman.ui.activities.SignUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activities.SignInActivity"
+            android:name="com.pratthamarora.proman.ui.activities.SignInActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.pratthamarora.proman.ui.activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activities.MyProfileActivity"
+            android:name="com.pratthamarora.proman.ui.activities.MyProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activities.CreateBoardActivity"
+            android:name="com.pratthamarora.proman.ui.activities.CreateBoardActivity"
             android:label="@string/create_board_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activities.TaskListActivity"
+            android:name="com.pratthamarora.proman.ui.activities.TaskListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activities.MembersActivity"
+            android:name="com.pratthamarora.proman.ui.activities.MembersActivity"
             android:label="@string/members"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".activities.CardDetailsActivity"
+            android:name="com.pratthamarora.proman.ui.activities.CardDetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 

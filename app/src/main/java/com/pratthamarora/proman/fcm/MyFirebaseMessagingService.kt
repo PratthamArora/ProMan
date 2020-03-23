@@ -13,8 +13,8 @@ import androidx.core.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import com.pratthamarora.proman.R
-import com.pratthamarora.proman.activities.MainActivity
-import com.pratthamarora.proman.activities.SignInActivity
+import com.pratthamarora.proman.ui.activities.MainActivity
+import com.pratthamarora.proman.ui.activities.SignInActivity
 import com.pratthamarora.proman.firebase.FirestoreClass
 import com.pratthamarora.proman.utils.Constants
 
