@@ -5,7 +5,7 @@ apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.pratthamarora.projekts"
@@ -34,13 +34,13 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.1.0'
     // Firebase Authentication Dependency
-    implementation "com.google.firebase:firebase-auth:19.3.0"
+    implementation "com.google.firebase:firebase-auth:19.3.1"
     // Firebase Cloud Firestore Dependency
-    implementation 'com.google.firebase:firebase-firestore:21.4.1'
+    implementation 'com.google.firebase:firebase-firestore:21.4.3'
     // Firebase Storage Dependency
     implementation 'com.google.firebase:firebase-storage:19.1.1'
     // Firebase Messaging Dependency
-    implementation 'com.google.firebase:firebase-messaging:20.1.3'
+    implementation 'com.google.firebase:firebase-messaging:20.2.0'
     // circular image view dependency
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     // Image loading library
