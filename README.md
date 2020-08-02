@@ -3,4 +3,4 @@ A Project Manager app that has following features- Registration, Login, Forget P
 
 # Demo
 
- <img src="app/demo/proman-demo.gif" height="400"/>
+ <img src="app/demo/proman-demo.gif" height="500"/>
